@@ -17,6 +17,14 @@ import Video from '@dictu/video';
 ```
 
 ## Build
+Install the dependencies and generate the files in `dist` before running the
+demo locally:
+
+```sh
+npm ci
+npm run build
+```
+
 The following commands can be used:
 ```
 build       - Compile and minify js.
