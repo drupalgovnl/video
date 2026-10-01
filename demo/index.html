@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video demo</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="video js-video">
+    <video preload="none" poster="http://media.w3.org/2010/05/bunny/poster.png">
+      <source src="http://media.w3.org/2010/05/bunny/movie.mp4">
+      <track label="Nederlands" kind="subtitles" srclang="nl" src="subtitle.srt">
+    </video>
+
+    <div class="video__controls">
+      <button class="video__playpause">Play/Pause</button>
+
+      <div class="video__current-time" role="timer">
+        00:00
+      </div>
+
+      <div tabindex="0" class="video__progress video__slider" role="slider" aria-valuenow="0">
+        <div class="video__progress-bar video__slider-bar"></div>
+        <div class="video__progress-loaded video__slider-bar"></div>
+      </div>
+
+      <div class="video__duration">
+        00:00
+      </div>
+
+      <button class="video__mute">Mute</button>
+
+      <div tabindex="0" class="video__volume video__slider" role="slider" aria-valuenow="0">
+        <div class="video__volume-bar video__slider-bar"></div>
+      </div>
+
+      <button class="video__caption" data-video-caption-lang="nl">cc</button>
+
+      <button class="video__fullscreen">Toggle fullscreen</button>
+    </div>
+  </div>
+
+  <script src="../dist/video.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>

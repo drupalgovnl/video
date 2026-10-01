@@ -1,0 +1,77 @@
+/* Video. */
+.video {
+  max-width: 50rem;
+  width: 100%;
+}
+.video.is-fullscreen {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
+.video video {
+  width: 100%;
+}
+
+/* Controls. */
+.video__controls {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  margin-top: .5rem;
+}
+.video.is-fullscreen .video__controls {
+  background-color: white;
+  bottom: 0;
+  left: 0;
+  padding: .25rem;
+  position: absolute;
+  width: 100%;
+}
+
+/* Slider. */
+.video__slider {
+  background-color: #ddd;
+  cursor: pointer;
+  height: 3px;
+  overflow: hidden;
+  position: relative;
+}
+.video__slider-bar {
+  background-color: slateblue;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: 0 0;
+  width: 100%;
+}
+
+/* Progress. */
+.video__progress {
+  flex: 1 1 auto;
+  min-width: 8rem;
+}
+.video__progress-bar {
+  z-index: 2;
+}
+.video__progress-loaded {
+  background-color: #eee;
+  z-index: 1;
+}
+
+/* Volume. */
+.video__volume {
+  width: 4rem;
+}
+
+/* Caption. */
+.video__caption.is-active {
+  background-color: slateblue;
+  color: white;
+}
